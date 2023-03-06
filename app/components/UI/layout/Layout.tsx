@@ -10,7 +10,7 @@ const Layout: FC<PropsWithChildren<{ title?: string }>> = ({ children, title }) 
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={{ flex: 1, paddingHorizontal: 7, paddingTop: Platform.OS === 'ios' ? top / 5 : top * 1.6 }} >
-        <Text style={{ color: COLORS.w80, fontSize: SIZES.h1, alignItems: 'center', justifyContent: 'center', textAlign: 'center' }} >{title}</Text>
+        <Text style={{ color: COLORS.w80, fontSize: SIZES.h1, alignItems: 'center', justifyContent: 'flex-end', textAlign: 'center' }} >{title}</Text>
         {children}
       </View >
     </SafeAreaView>

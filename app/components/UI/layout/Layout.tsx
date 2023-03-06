@@ -5,7 +5,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 
 const Layout: FC<PropsWithChildren<{ title?: string }>> = ({ children, title }) => {
-
+  //reduxxx
   const { top } = useSafeAreaInsets()
   return (
     <SafeAreaView style={{ flex: 1 }}>

@@ -23,6 +23,8 @@ const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
 
   useEffect(() => {
     let isMounted = false
+    console.log(isMounted);
+
     const getUserFromStorage = async () => {
       if (isMounted) {
         // Get user from async storage and write to store
